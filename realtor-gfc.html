@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공인중개사를 위한 삼성생명 GFC 안내 | 시청역 인근지점</title>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="삼성생명 GFC 모집">
+<meta property="og:title" content="공인중개사라면, 부동산만 중개해야 할까요?">
+<meta property="og:description" content="부동산 경험에 삼성생명 GFC라는 금융 전문 영역을 하나 더하는 방법.">
+<meta property="og:image" content="https://picsum.photos/seed/gfc-realtor1/1000/600">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<style>
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');
+  font-weight: 45 920;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap');
+
+:root{
+  --ink:#141d33;
+  --ink-2:#1f2c4d;
+  --brass:#b3894a;
+  --brass-soft:#e4d3b6;
+  --paper:#f6f3ec;
+  --paper-white:#fffdf9;
+  --text:#23262d;
+  --text-muted:#666c78;
+  --line:#e4ddcd;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Pretendard', -apple-system, sans-serif;
+  color:var(--text);
+  background:var(--paper-white);
+  line-height:1.65;
+  font-size:18px;
+  word-break:keep-all;
+}
+h1,h2,h3{
+  font-family:'Noto Serif KR', serif;
+  line-height:1.35;
+  font-weight:700;
+}
+a{color:inherit; text-decoration:none;}
+.wrap{max-width:640px; margin:0 auto; padding:0 24px;}
+
+/* TOPBAR */
+.topbar{
+  background:var(--ink);
+  padding:14px 0;
+}
+.topbar .wrap{display:flex; align-items:center; justify-content:space-between;}
+.back-link{
+  color:var(--brass-soft);
+  font-size:15px;
+  font-weight:600;
+  display:flex; align-items:center; gap:6px;
+}
+.topbar .brand-mini{
+  color:#c9cedb;
+  font-size:13px;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(165deg, var(--ink) 0%, var(--ink-2) 100%);
+  color:#fff;
+  padding:44px 0 40px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  right:-60px; top:-60px;
+  width:220px; height:220px;
+  border:1px solid rgba(179,137,74,0.35);
+  border-radius:50%;
+}
+.hero .tag{
+  color:var(--brass-soft);
+  font-size:15px;
+  letter-spacing:0.02em;
+  margin-bottom:14px;
+}
+.hero h1{
+  font-size:30px;
+  color:#fff;
+}
+.hero p.lead{
+  margin-top:16px;
+  font-size:17px;
+  color:#c9cedb;
+}
+.hero p.lead b{color:var(--brass-soft); font-weight:700;}
+
+/* SECTION GENERIC */
+section{padding:44px 0;}
+.section-alt{background:var(--paper);}
+.eyebrow{
+  color:var(--brass);
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+h2.title{
+  font-size:25px;
+  margin-bottom:20px;
+}
+p.body-text{
+  font-size:17px;
+  color:var(--text);
+  margin-bottom:14px;
+}
+p.body-text:last-child{margin-bottom:0;}
+
+/* QUOTE */
+.quote{
+  border-left:3px solid var(--brass);
+  padding:4px 0 4px 18px;
+  margin:18px 0;
+  font-size:16.5px;
+  color:var(--ink-2);
+  font-style:normal;
+}
+
+/* CASE CARDS */
+.case-card{
+  background:var(--paper-white);
+  border:1px solid var(--line);
+  padding:22px 20px;
+  margin-bottom:16px;
+}
+.case-card:last-child{margin-bottom:0;}
+.case-card .case-tag{
+  color:var(--brass);
+  font-size:13.5px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+.case-card h3{
+  font-size:19px;
+  margin-bottom:10px;
+}
+.case-card p{
+  font-size:16px;
+  color:var(--text);
+  margin-bottom:10px;
+}
+.case-card p:last-child{margin-bottom:0;}
+.case-card .flow{
+  margin-top:12px;
+  font-size:14.5px;
+  color:var(--brass);
+  font-weight:700;
+  letter-spacing:0.01em;
+}
+
+/* DEFINITION LIST (재사용) */
+.dl-row{
+  display:flex;
+  gap:20px;
+  padding:20px 0;
+  border-bottom:1px solid var(--line);
+}
+.dl-row:last-child{border-bottom:none;}
+.dl-term{
+  flex:0 0 96px;
+  font-weight:700;
+  font-size:16.5px;
+  color:var(--ink);
+  padding-top:1px;
+}
+.dl-desc{
+  flex:1;
+  font-size:16.5px;
+  color:var(--text);
+}
+.dl-desc small{
+  display:block;
+  color:var(--text-muted);
+  font-size:14.5px;
+  margin-top:4px;
+}
+
+/* NUMBERED LIST BLOCK */
+.num-block{margin-bottom:20px;}
+.num-block:last-child{margin-bottom:0;}
+.num-block .n-head{
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:6px;
+}
+.num-block .n-badge{
+  width:26px; height:26px;
+  border-radius:50%;
+  background:var(--ink);
+  color:var(--brass-soft);
+  font-size:13px;
+  font-family:'Noto Serif KR', serif;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.num-block h3{font-size:18px;}
+.num-block p{font-size:16px; color:var(--text-muted);}
+
+/* PROCESS TIMELINE (재사용) */
+.process{
+  position:relative;
+  padding-left:26px;
+  border-left:1px solid var(--line);
+}
+.step{position:relative; padding-bottom:26px;}
+.step:last-child{padding-bottom:0;}
+.step::before{
+  content:attr(data-n);
+  position:absolute;
+  left:-40px; top:0;
+  width:28px; height:28px;
+  border-radius:50%;
+  background:var(--ink);
+  color:var(--brass-soft);
+  font-size:13px;
+  font-family:'Noto Serif KR', serif;
+  display:flex; align-items:center; justify-content:center;
+}
+.step h3{font-size:17.5px; margin-bottom:4px;}
+.step p{color:var(--text-muted); font-size:15.5px;}
+
+/* INCOME BOX */
+.income-box{
+  background:var(--ink);
+  color:#fff;
+  padding:24px 22px;
+  margin:18px 0;
+}
+.income-box .big{
+  font-family:'Noto Serif KR', serif;
+  font-size:20px;
+  color:var(--brass-soft);
+  margin-bottom:8px;
+}
+.income-box p{color:#d7dae3; font-size:15.5px; margin-bottom:6px;}
+.income-box p:last-child{margin-bottom:0;}
+.income-box .fine{color:#9aa1b3; font-size:13px; margin-top:10px;}
+
+.flow-simple{
+  background:var(--paper);
+  border:1px solid var(--line);
+  padding:16px 18px;
+  font-size:15px;
+  color:var(--ink-2);
+  font-weight:600;
+  margin:16px 0;
+  line-height:1.9;
+}
+
+/* PILLS */
+.pills{display:flex; flex-wrap:wrap; gap:8px;}
+.pill{
+  border:1px solid var(--line);
+  padding:8px 14px;
+  font-size:15px;
+  color:var(--text);
+  background:var(--paper-white);
+}
+
+/* TYPE LIST */
+.type-row{
+  display:flex; gap:14px;
+  padding:16px 0;
+  border-bottom:1px solid var(--line);
+}
+.type-row:last-child{border-bottom:none;}
+.type-row .t-n{
+  flex:0 0 26px;
+  color:var(--brass);
+  font-weight:700;
+  font-family:'Noto Serif KR', serif;
+  font-size:16px;
+}
+.type-row .t-body b{display:block; font-size:16.5px; margin-bottom:2px;}
+.type-row .t-body span{font-size:15px; color:var(--text-muted);}
+
+/* CLOSING */
+.closing{
+  background:linear-gradient(165deg, var(--ink) 0%, var(--ink-2) 100%);
+  color:#fff;
+  padding:48px 0 52px;
+  text-align:center;
+}
+.closing h2{color:#fff; font-size:24px; margin-bottom:14px;}
+.closing p{color:#c9cedb; font-size:16px; margin-bottom:8px;}
+.closing p.emph{color:var(--brass-soft); font-weight:700; font-size:18px; margin:18px 0;}
+
+.cta-row{
+  margin-top:24px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-width:340px;
+  margin-left:auto; margin-right:auto;
+}
+.btn{
+  display:block;
+  padding:15px;
+  border-radius:2px;
+  font-size:16.5px;
+  font-weight:600;
+  text-align:center;
+}
+.btn-primary{background:var(--brass); color:#181818;}
+.btn-outline{border:1px solid rgba(255,255,255,0.4); color:#fff;}
+.btn-kakao{background:#FEE500; color:#181600;}
+
+footer{
+  padding:24px 24px 40px;
+  text-align:center;
+  color:var(--text-muted);
+  font-size:13.5px;
+  background:var(--paper-white);
+}
+
+@media (max-width:420px){
+  .hero h1{font-size:25px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="back-link" href="index.html">← 처음으로</a>
+    <span class="brand-mini">삼성생명 GFC · 시청역 인근지점</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="tag">공인중개사를 위한 안내</div>
+    <h1>공인중개사라면,<br>부동산만 중개해야 할까요?</h1>
+    <p class="lead">이미 만나고 있는 고객에게 <b>금융까지 연결</b>한다면 어떨까요.<br>부동산 경험에 삼성생명 GFC라는 금융 전문 영역을 하나 더하는 방법을 소개합니다.</p>
+  </div>
+</section>
+
+<img class="photo-full" style="width:100%; height:220px; object-fit:cover; display:block;" src="https://picsum.photos/seed/gfc-realtor1/1000/600" alt="공인중개사와 금융 상담">
+
+<!-- 왜 잘 맞는가 -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">왜 공인중개사에게 잘 맞을까요</div>
+    <h2 class="title">이미 만나고 있는 고객이, 다음 고객입니다</h2>
+    <p class="body-text">사람들이 집을 사거나 팔 때 가장 먼저 만나는 사람, 상가나 사무실을 구할 때도 가장 가까이서 상담하는 사람이 공인중개사입니다. 그런데 거래가 끝난 뒤부터 고객에게는 또 다른 문제가 시작됩니다.</p>
+    <div class="quote">
+      대출은 어떻게 갚을까? 목돈은 어떻게 관리할까?<br>
+      상속·증여는 어떻게 준비할까? 법인이라면 회사와 개인의 자산은 어떻게 관리할까?
+    </div>
+    <p class="body-text">한 달에 매수 고객을 10명 만난다면, 그중에는 대출을 받는 사람, 상가를 구입하는 사람, 임대사업을 하는 사람, 은퇴를 준비하는 사람, 법인 대표, 자녀에게 재산을 물려주려는 사람이 섞여 있습니다. 부동산 상담을 하다 보면 자연스럽게 금융 이야기가 나올 수밖에 없습니다.</p>
+    <p class="body-text">GFC를 함께 한다는 것은 이 고객들에게 무조건 보험을 판매한다는 뜻이 아닙니다. 금융상담이 필요한 순간, <b>"이 부분은 제가 금융 쪽에서도 도움을 드릴 수 있습니다"</b>라고 말할 수 있는 영역을 하나 더 갖는 것입니다.</p>
+  </div>
+</section>
+
+<!-- 실제 사례 -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="eyebrow">실제 사례로 보기</div>
+    <h2 class="title">부동산 상담이 금융 상담으로 이어지는 순간</h2>
+
+    <div class="case-card">
+      <div class="case-tag">사례 ① 아파트를 구입한 50대 고객</div>
+      <h3>대출 3억, 그 다음 이야기</h3>
+      <p>8억원 아파트를 구입하며 3억원을 대출받은 A씨. "대출이 좀 부담스럽긴 한데 앞으로 10년 정도는 갚아야죠"라는 말에 이렇게 안내할 수 있습니다.</p>
+      <div class="quote">"소득이 중단되거나 가족에게 예상치 못한 일이 생겼을 때 대출 문제가 어떻게 되는지도 한번 확인해 보시는 게 좋습니다. 제가 GFC 업무도 하고 있어서 필요하시면 금융 쪽도 같이 점검해 드릴게요."</div>
+      <div class="flow">부동산 중개 → 대출 → 보장 점검 → 금융상담</div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-tag">사례 ② 10억원 상가를 매각한 고객</div>
+      <h3>중개수수료로 끝낼 수도, 아닐 수도</h3>
+      <p>오랫동안 보유한 상가를 매각한 B씨에게는 목돈 10억원을 어떻게 관리할 것인가라는 새로운 문제가 생깁니다.</p>
+      <div class="quote">"목돈이 생기셨으니 생활비나 은퇴자금 계획도 세워보시는 게 좋겠습니다. 원하시면 금융 쪽 전문가와 함께 점검해 드릴 수 있습니다."</div>
+      <div class="flow">상가 팔아준 사람 → 판 다음까지 생각해 주는 사람</div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-tag">사례 ③ 법인 사무실을 구하는 대표</div>
+      <h3>직원 30명, 계약은 끝났지만</h3>
+      <p>C대표는 회사가 성장하면서 새 사무실을 찾아 중개사를 찾아왔습니다. 계약 후 이렇게 물을 수 있습니다.</p>
+      <div class="quote">"직원도 많이 늘었는데 대표님 회사의 보장이나 퇴직금 같은 부분은 따로 점검해 보셨나요?"</div>
+      <p>관심을 보이면 법인 + 대표자 + 임직원 + 퇴직 + 승계까지 이어지는 상담으로 연결될 수 있습니다.</p>
+    </div>
+
+    <div class="case-card">
+      <div class="case-tag">사례 ④ 부모님 부동산을 정리하는 자녀</div>
+      <h3>매각 이후, 상속이라는 다음 질문</h3>
+      <p>부모님 주택을 매각하려는 D씨와 상담하다 보면 자연스럽게 이런 질문이 나올 수 있습니다.</p>
+      <div class="quote">"이 집을 팔고 나면 부모님 생활비는 어떻게 하실 계획이세요?" / "형제분들과 상속 문제도 미리 정리해 놓으셨나요?"</div>
+      <p>세금·법률 문제는 세무사·변호사 등 전문가와 연결하고, 금융 부분은 GFC가 상담하는 방식으로 접근할 수 있습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GFC가 하는 일 -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">GFC가 실제로 하는 일</div>
+    <h2 class="title">보험 하나를 파는 일이 아닙니다</h2>
+    <p class="body-text">GFC라고 하면 흔히 "보험설계사 아닌가요?"라고 생각할 수 있습니다. 물론 개인보험도 취급하지만, 주요 업무는 <b>기업 대표와 임직원, 자산가를 대상으로 기업과 개인의 금융·보장 문제를 함께 살펴보는 것</b>입니다. 공인중개사가 이미 만나고 있는 법인 대표, 건물주, 상가 임대인, 자산가, 40~60대 고객과 정확히 겹칩니다.</p>
+
+    <div class="num-block">
+      <div class="n-head"><div class="n-badge">1</div><h3>기업보험</h3></div>
+      <p>직원이 20명이든 100명이든, 회사는 임직원의 사고·질병에 대한 보장과 복지를 고민합니다. 이런 필요에 맞춰 임직원 단체보험 등 기업보험을 상담합니다.</p>
+    </div>
+    <div class="num-block">
+      <div class="n-head"><div class="n-badge">2</div><h3>CEO 개인보험</h3></div>
+      <p>대표 개인에게 사고나 질병이 생기면 회사와 가족 모두에 문제가 생길 수 있습니다. 법인보험 + CEO 개인보험을 함께 보는 것이 GFC 업무의 한 축입니다.</p>
+    </div>
+    <div class="num-block">
+      <div class="n-head"><div class="n-badge">3</div><h3>자산가의 상속·증여 컨설팅</h3></div>
+      <p>"건물을 자녀에게 어떻게 물려줘야 할까", "상속세 낼 현금이 부족하면 어떻게 하나" 같은 고민을, 필요시 세무·법률 전문가와 함께 검토하고 금융적인 준비 방법을 상담합니다.</p>
+    </div>
+    <div class="num-block">
+      <div class="n-head"><div class="n-badge">4</div><h3>법인 설립·자산구조 컨설팅</h3></div>
+      <p>법인 → 대표 → 가족 → 향후 승계까지 연결해 전체 구조를 살펴봅니다. 다만 법인 설립·세금 문제는 전문 자격자의 영역이므로, GFC는 관련 전문가와 협업하는 방식으로 진행합니다.</p>
+    </div>
+    <div class="num-block">
+      <div class="n-head"><div class="n-badge">5</div><h3>법인 절세 컨설팅</h3></div>
+      <p>이익 관리, 대표 퇴직금 준비, 직원 복지, 법인·개인 자금 구분 같은 문제를 기업 상황에 맞춰 살펴보고 필요시 세무 전문가와 함께 상담합니다.</p>
+    </div>
+    <div class="num-block">
+      <div class="n-head"><div class="n-badge">6</div><h3>개인보험 (건강보험)</h3></div>
+      <p>최근 관심이 높은 건강보험 중에는 납입기간이 끝난 뒤 납입보험료의 100% 환급을 특징으로 하는 상품도 있습니다. 다만 <b>모든 건강보험이 100% 환급되는 것은 아니며</b>, 상품별 환급 조건·보장 내용·납입기간·환급 시점을 반드시 확인해야 합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 고객 발굴 & 영업지원 -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="eyebrow">고객은 어떻게 찾고, 어떻게 지원받나요</div>
+    <h2 class="title">혼자 뛰지 않는 구조</h2>
+
+    <div class="dl-row">
+      <div class="dl-term">기업 DB</div>
+      <div class="dl-desc">GFC 전용 AI 기반 기업 DB로 상담 대상 기업을 찾고 선별
+        <small>무작정 찾아가는 것이 아니라, 어떤 회사에 먼저 연락할지 찾아주는 시스템을 활용합니다.</small>
+      </div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-term">접근 방법</div>
+      <div class="dl-desc">우편물 · TM(전화상담) · 돌입방문
+        <small>돌입방문은 약속 없이 관심 기업을 직접 찾아가 상담 기회를 만드는 방식으로, GFC의 대표적인 영업 방법입니다.</small>
+      </div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-term">VIP 세미나</div>
+      <div class="dl-desc">호텔 등에서 진행되는 VIP 세미나에 초대해 세금·상속·기업경영 주제로 관계를 시작
+        <small>법인 대표·자산가와 먼저 관계를 만드는 방법입니다.</small>
+      </div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-term">FO센터 동행</div>
+      <div class="dl-desc">고액자산가·복잡한 자산관리 상담을 전문가와 함께 준비·동행
+        <small>모든 금융 지식을 혼자 갖출 필요가 없습니다.</small>
+      </div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-term">세무팀장 동행</div>
+      <div class="dl-desc">삼성생명 전속 세무 전문가 지원을 활용한 상속·증여·법인 세금 상담
+        <small>"이 문제는 세무 전문가와 함께 보시는 게 정확합니다"라고 안내하고 동행 상담으로 연결할 수 있습니다.</small>
+      </div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-term">지점장·CM 동행</div>
+      <div class="dl-desc">첫 고객 면담, 상담 준비, 설계 지원, 기업 분석, 초회 면담까지 동행 지원
+        <small>처음부터 혼자 하는 것이 아니라 경험을 쌓으며 영업력을 키우는 구조입니다.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 수입구조 -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">그렇다면 돈은 어떻게 벌게 될까</div>
+    <h2 class="title">두 개의 수입 구조</h2>
+    <p class="body-text">GFC는 월급을 받는 직장이 아니라, 활동량과 계약 실적, 회사의 수수료 기준에 따라 소득이 달라지는 구조입니다.</p>
+    <div class="flow-simple">부동산 중개수입 + GFC 활동에 따른 수입</div>
+    <p class="body-text">예를 들어 부동산 고객 중 금융상담이 필요한 고객을 선별해 월 10명을 상담하고, 그중 실제 상담으로 이어지는 3~4명 가운데 일부가 계약으로 연결되면 GFC 수수료가 발생하는 구조로 이해할 수 있습니다. 중요한 것은 모든 고객에게 금융상품을 권하는 것이 아니라, <b>실제로 상담이 필요한 고객만 선별</b>하는 것입니다.</p>
+
+    <div class="income-box">
+      <div class="big">1년 이상 실활동자 상위 30% 월평균 세전 981만원</div>
+      <p>삼성생명 공식 GFC 안내 페이지가 제시한 2022년 기준 자료입니다.</p>
+      <div class="fine">특정 개인에게 보장되는 금액이 아니며, 실제 수입은 활동량·실적·유지 여부·당시 수수료 제도 등에 따라 달라질 수 있습니다.</div>
+    </div>
+
+    <p class="body-text">따라서 "월 1,000만원을 벌 수 있다"고 생각하기보다, "내가 가진 고객과 영업 경험을 활용해 새로운 수입원을 만들 수 있는가"를 보는 것이 더 현실적입니다.</p>
+  </div>
+</section>
+
+<!-- 서로 고객이 되는 구조 -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="eyebrow">양방향으로 연결됩니다</div>
+    <h2 class="title">GFC 고객도, 부동산 고객이 됩니다</h2>
+    <p class="body-text">GFC 상담을 하다 보면 고객이 "사실 지금 집을 팔려고 하는데…", "상가 하나 알아보고 있는데…"라고 말할 수 있습니다. 본인이 공인중개사라면 GFC → 부동산으로도 자연스럽게 연결됩니다.</p>
+    <div class="flow-simple">
+      부동산 고객 확보 → 금융상담 필요 고객 발견 → GFC 상담 →<br>
+      금융 고객 확보 → 부동산 필요 고객 발생 → 다시 부동산으로 연결
+    </div>
+  </div>
+</section>
+
+<!-- 적합 유형 -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">이런 공인중개사에게 특히 잘 맞습니다</div>
+    <h2 class="title">다섯 가지 유형</h2>
+    <div class="type-row">
+      <div class="t-n">01</div>
+      <div class="t-body"><b>기존 고객이 많은 분</b><span>오랫동안 중개업을 해서 과거 고객이 많이 쌓여 있는 분</span></div>
+    </div>
+    <div class="type-row">
+      <div class="t-n">02</div>
+      <div class="t-body"><b>법인·상가·건물 거래가 많은 분</b><span>대표자와 건물주를 자주 만나는 분</span></div>
+    </div>
+    <div class="type-row">
+      <div class="t-n">03</div>
+      <div class="t-body"><b>40~60대 고객이 많은 분</b><span>은퇴·상속·증여 문제까지 이야기하는 고객이 많은 분</span></div>
+    </div>
+    <div class="type-row">
+      <div class="t-n">04</div>
+      <div class="t-body"><b>새로운 수입원이 필요한 분</b><span>중개업 경기에만 수입이 좌우되는 구조에서 벗어나고 싶은 분</span></div>
+    </div>
+    <div class="type-row">
+      <div class="t-n">05</div>
+      <div class="t-body"><b>상담을 좋아하는 분</b><span>중개 경험을 금융 분야에서도 활용하고 싶은 분</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 자주 묻는 질문 -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="eyebrow">자주 묻는 질문</div>
+    <h2 class="title">시작 전에 궁금한 것들</h2>
+    <div class="dl-row">
+      <div class="dl-term">보험을<br>몰라도?</div>
+      <div class="dl-desc">처음부터 모든 상품을 외울 필요는 없습니다. 고객을 만나는 법, 문제를 찾는 법, 전문가에게 연결하는 법부터 시작하면 됩니다.
+        <small>삼성생명은 기업 조회 프로그램, 기업보장분석 프로그램, 기업분석 보고서, 모바일 영업지원 시스템 등 교육·지원 체계를 제공합니다.</small>
+      </div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-term">중개업을<br>그만둬야?</div>
+      <div class="dl-desc">그럴 필요는 없습니다. 기존 고객과 신뢰를 그대로 활용하면서 금융 전문성을 하나씩 추가하는 모델입니다.
+        <small>예: 오전 GFC 업무, 오후 부동산 업무, 주 1~2회 법인·고객 상담처럼 본인 상황에 맞게 시작할 수 있습니다.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 일정 -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">10월에 시작한다면</div>
+    <h2 class="title">세 단계로 11월 초 위촉까지</h2>
+    <div class="process">
+      <div class="step" data-n="1">
+        <h3>10월 1일 ~ 14일 · 시험 준비 및 응시</h3>
+        <p>보험설계사 시험을 준비하고 응시하여 합격하는 과정입니다.</p>
+      </div>
+      <div class="step" data-n="2">
+        <h3>10월 15일 ~ 10월 말 · 필수 GTC 교육</h3>
+        <p>법인 관련 교육이 주요 내용입니다. 09:00~17:00, 출석률 80% 이상 필요, 점심 제공.</p>
+      </div>
+      <div class="step" data-n="3">
+        <h3>11월 초 · GFC 위촉</h3>
+        <p>시험과 필수교육 등 절차를 마치면 11월 초 위촉을 목표로 진행합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 마무리 -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="eyebrow">공인중개사에게 GFC란</div>
+    <h2 class="title">부동산을 버리는 것이 아니라, 넓히는 것</h2>
+    <p class="body-text">지금까지 공인중개사로 일하면서 고객을 만나왔다면, GFC를 시작한다고 기존 경험을 버리는 것이 아닙니다. 부동산 상담 → 금융 고민 발견 → 필요한 고객에게 금융상담 제안 → 기업·CEO·개인보험 상담 → 필요하면 세무·법률 전문가 연결. 이렇게 활동 범위를 넓힐 수 있습니다.</p>
+    <p class="body-text">GFC가 된다고 모든 고객에게 보험을 권할 필요는 없습니다. 오히려 그렇게 하면 공인중개사로 쌓아온 신뢰가 흔들릴 수 있습니다. <b>고객에게 필요한 문제가 있을 때 금융 전문가로서 도움을 주는 것</b> — 이것이 가장 중요합니다.</p>
+  </div>
+</section>
+
+<div class="closing">
+  <div class="wrap">
+    <h2>부동산을 아는 사람에서,<br>부동산과 금융을 함께 이해하는 사람으로</h2>
+    <p class="emph">10월 교육 → 11월 초 GFC 위촉</p>
+    <p>지금까지 쌓아온 공인중개사 경험에 금융이라는 전문성을 더하는 방법.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="sms:01076871100">📩 문자로 즉시 상담 신청</a>
+      <a class="btn btn-kakao" href="http://pf.kakao.com/_xgxgMdX" target="_blank" rel="noopener">카카오톡 비즈니스채널 연결</a>
+      <a class="btn btn-outline" href="index.html">← 메인 페이지로 돌아가기</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  삼성생명 GFC · 시청역 인근지점 / 전국 지점<br>
+  본 자료는 컨설턴트(위촉직) 모집 안내이며, 소득·상품 조건 등 세부 처우는 상담을 통해 확인하실 수 있습니다.
+</footer>
+
+</body>
+</html>
